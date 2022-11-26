@@ -32,6 +32,7 @@ body main {
 body main #start {
   width: 100%;
   height: 100%;
+  font-family: "pixel", serif;
 }
 body main #start #darkStartWindow {
   display: flex;
@@ -54,16 +55,29 @@ body main #start #darkStartWindow {
     opacity: 0;
   }
 }
+body main #start #logoStartMenue {
+  font-size: 70px;
+  padding: 80px;
+}
 body main #start #playBtnWindow {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   font-size: 50px;
 }
+body main #start #startBtn {
+  padding: 140px 0;
+}
 body main #game {
   display: none;
+}
+
+@font-face {
+  font-family: "pixel";
+  src: url("fonts/Break Password/BreakPassword.otf");
 }
 
 /*# sourceMappingURL=style.css.map */

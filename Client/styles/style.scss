@@ -40,6 +40,8 @@ body{
     #start{
       width: 100%;
       height: 100%;
+      font-family: "pixel", serif;
+
 
       #darkStartWindow{ // 'GAME' for 4s, then opacity 0
         display: flex;
@@ -57,14 +59,21 @@ body{
         50% { opacity: 100}
         100% { opacity: 0;}
       }
-
+      #logoStartMenue{
+        font-size: 70px;
+        padding: 80px;
+      }
       #playBtnWindow{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
         font-size: 50px;
+      }
+      #startBtn{
+        padding: 140px 0;
       }
     }
     #game{
@@ -73,4 +82,9 @@ body{
   }
 
   
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url('fonts/Break Password/BreakPassword.otf'); //дописать урл-ы
 }

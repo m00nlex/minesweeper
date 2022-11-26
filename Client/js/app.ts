@@ -8,20 +8,12 @@
 
 console.log('It\'s working bruh' as string)
 
-// function offVisibility(elem: string){
-//     const elemDOM = document.getElementById(elem);
+// const changeVisibility = (elem: string) => {
+//     let elemDOM = document.getElementById(elem);
 //     if(elemDOM){
-//         elemDOM.style.visibility = 'hidden'
+//         (elemDOM.style.visibility === 'hidden')?elemDOM.style.visibility = 'visible':elemDOM.style.visibility = 'hidden';
 //     }
-//     return;
 // }
-
-const changeVisibility = (elem: string) => {
-    let elemDOM = document.getElementById(elem);
-    if(elemDOM){
-        (elemDOM.style.visibility === 'hidden')?elemDOM.style.visibility = 'visible':elemDOM.style.visibility = 'hidden';
-    }
-}
 
 const changeDisplayFlex = (displayElem: string, mode: string) => {
     let elemDOM = document.getElementById(displayElem);
