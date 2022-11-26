@@ -17,11 +17,53 @@ body .centred {
   align-items: center;
   justify-content: center;
 }
+body .unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 body main {
   background-color: black;
-  width: 50%;
-  height: 50%;
+  width: 800px;
+  height: 800px;
   color: whitesmoke;
+}
+body main #start {
+  width: 100%;
+  height: 100%;
+}
+body main #start #darkStartWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  animation: starting 4s linear;
+  animation-fill-mode: both;
+}
+@keyframes starting {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body main #start #playBtnWindow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+}
+body main #game {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
